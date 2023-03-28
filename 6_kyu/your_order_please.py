@@ -6,4 +6,3 @@
 
 def order(sentence):
     return ' '.join(word for index in range(len(sentence)) for word in sentence.split() if str(index + 1) in word)
-    
