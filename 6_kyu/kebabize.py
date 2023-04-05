@@ -10,3 +10,4 @@ import re
 
 def kebabize(string):
     return '-'.join(re.findall(r'[a-z]+|[A-Z][a-z]*', re.sub(r'[0-9]', '', string))).lower()
+ss
