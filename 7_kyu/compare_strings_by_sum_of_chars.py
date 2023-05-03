@@ -8,9 +8,9 @@
 # Your method should return true, if the strings are equal and false if they are not equal.
 
 def compare(st1, st2):
-    if not st1 or not st1.isalpha():
+    if not (st1 and st1.isalpha()):
         st1 = ''
-    if not st2 or not st2.isalpha():
+    if not (st2 and st2.isalpha()):
         st2 = ''
-    return st1 == st2 if not st1 and not st2 else sum(ord(char) for char in st1.upper()) == sum(ord(char)
-                                                                                                for char in st2.upper())
+    return st1 == st2 if not (st1 or st2) else sum(ord(char) for char in st1.upper()) == sum(ord(char)
+                                                                                             for char in st2.upper())
