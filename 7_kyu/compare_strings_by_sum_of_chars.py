@@ -14,3 +14,12 @@ def compare(st1, st2):
         st2 = ''
     return st1 == st2 if not (st1 or st2) else sum(ord(char) for char in st1.upper()) == sum(ord(char)
                                                                                              for char in st2.upper())
+
+
+x, y, = 0, 1
+z = 0
+
+if z == (x and y):
+    print('Yes it is')
+else:
+    print('No it is not')
